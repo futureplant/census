@@ -45,6 +45,10 @@ getAccessibles <- function(dtf){
   return(dtf[which(dtf$Accessibilitat == "Accés lliure"),2])
 }
 
+getAskPermissions <- function(dtf){
+  return(dtf[which(dtf$Accessibilitat == "Previ avís al propietari"),2])
+}
+
 getReserved <- function(dtf){
   return(dtf[which(dtf$Voleu.reservar.aquest.punt. == "Si"),2])
 }

@@ -5,7 +5,7 @@ library(shiny)
 
 # Construct the UI argument for the call to the Shiny App in the main.R script
 ui <- dashboardPage(
-  dashboardHeader(title = "Amfibis Manresa"),
+  dashboardHeader(title = "Nit dels Amfibis"),
   dashboardSidebar(disable = TRUE),
   dashboardBody(
     fluidRow(column(width = 9,
@@ -19,27 +19,29 @@ ui <- dashboardPage(
     column(width = 3,
            
            # Construct box with image and introductory text for the app
-           box(HTML("<strong>Valoració de punts d'aigua</strong><br/>
+           box(HTML("<strong>Censos Audio-Visuals</strong><br/>
                     <p align='justify'>Benvinguts a l'aplicació per 
-                    valorar i registrar punts d'aigua. Aquest és el 
-                    primer pas per al Projecte de Seguiment del 
-                    Tòtil I Altres Amfibis de Manresa.<br/ > 
+                    entrar les dades dels censos d'amfibis.<br/ > 
                     </p>
                     
                     <strong>Simbologia</strong><br/ >
-                    <strong>Blau:</strong> pendent de valoració<br/ >
-                    <strong>Taronja:</strong> valoració incompleta<br/ >
-                    <strong>Verd:</strong> valoració completa</p>
+                    <strong>Blau:</strong> Punt d'aigua lliure, pendent de visitar<br/ >
+                    <strong>Taronja:</strong> Reservat<br/ >
+                    <strong>Verd:</strong> Cens realitzat</p>
                   
                     <strong>Com funciona?</strong><br/ >
-                    <strong>1-</strong>    Clic a un punt d'aigua.<br/ >
-                    <strong>2-</strong>    Clicant a direccions, Google Maps us hi portarà directament.<br/ >
-                    <strong>3-</strong>    Cliqueu a 'assessement' per començar la valoració d'un punt.<br/ >
-                    <strong>4-</strong>    Si marqueu que no és un punt adequat, o el propietari ens denega l'accés, ja podeu acabar la valoració. EL punt desapareixerà.<br/ >
-                    <strong>5-</strong>    Al final cliqueu si la valoració ha quedat completada o si per algun impediment ha faltat registrar informació (p.ex. el propietari no és a casa)<br/ >
+                    <strong>1-</strong>    Clic a un punt d'aigua lliure (blau).<br/ >
+                    <strong>2-</strong>    Clicant a reserva, podeu entrar el nom del grup i el punt es tornarà taronja.<br/ >
+                    <strong>3-</strong>    Clicant a directions, Google Maps us hi portarà a prop. <br/ >
+                    <strong>4-</strong>    Deixeu el termòmetre a l'aire lliure i comenceu el cens auditiu de 7 minuts.<br/ > 
+                    <strong>5-</strong>    En acabar apunteu les condicions ambientals i reviseu els voltants del punt d'aigua.<br/ > 
+                    <strong>6-</strong>    Cliqueu a 'observation' per entrar els detalls del cens audio-visual.<br/ > 
+
+                    <br/ >
+                    
                     Si hi ha cap problema amb la connexió, apunteu les dades en un paper i ja emplenareu a casa. Contacteu al Ferran per a qualsevol dubte.<br/ >
                     <br/ ><br/ >
-                    Moltes gràcies per la vostra col·laboració,<br/ >
+                    Bona sort a tots i totes! <br/ >
                     <br/ >
                     Ferran 667766497
                     
